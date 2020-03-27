@@ -2,9 +2,9 @@ package gjs.com.services;
 
 import gjs.com.api.LanguageChecker;
 
-public class SpellChecker implements LanguageChecker{
+public class EnglishSpellChecker implements LanguageChecker{
 	
-	public SpellChecker(){
+	public EnglishSpellChecker(){
 		System.out.println("Inside SpellChecker constructor." );
 	}
 	public void checkSpelling(){

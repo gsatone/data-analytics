@@ -9,7 +9,7 @@ import gjs.com.dao.SingletonBean;
 
 public class MainApp {
 	public static void main(String[] args) {
-		AbstractApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("spring-rgf-config.xml");
 		
 		SingletonBean objA = (SingletonBean) context.getBean("singletonBean");
 		

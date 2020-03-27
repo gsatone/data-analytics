@@ -10,7 +10,7 @@ import gjs.com.dao.RiskCoverageImpl;
 public class InheritanceApp {
 	public static void main(String[] args) {
 
-		AbstractApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("spring-rgf-config.xml");
 		HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
 		objA.getMessage1();
 		objA.getMessage2();

@@ -1,17 +1,18 @@
 package gjs.com.tools;
 
+import gjs.com.api.LanguageChecker;
 import gjs.com.services.SpellChecker;
 
 public class TextEditor {
 
-	private SpellChecker spellChecker;
+	private LanguageChecker spellChecker;
 
 	public void setSpellChecker(SpellChecker spellChecker) {
 		System.out.println("Inside setSpellChecker." );
 		this.spellChecker = spellChecker;
 	}
 
-	public SpellChecker getSpellChecker() {
+	public LanguageChecker getSpellChecker() {
 		return spellChecker;
 	}
 	public void spellCheck() {

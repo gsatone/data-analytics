@@ -3,13 +3,15 @@ package gjs.com.applications;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import gjs.com.tools.TextEditor;
+import gjs.com.dao.ProfileDetails;
 
-public class EditorApp {
+public class ProfileLister {
 	public static void main(String[] args) {
-
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("spring-rgf-config.xml");
-		TextEditor ted = (TextEditor) context.getBean("textEditor");
-		ted.spellCheck();
+		ProfileDetails jc = (ProfileDetails) context.getBean("profileDetails"); 
+		jc.getAddressList();
+		jc.getAddressSet();
+		jc.getAddressMap();
+		jc.getAddressProp();
 	}
 }
