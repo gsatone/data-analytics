@@ -11,6 +11,9 @@ public class InheritanceApp {
 	public static void main(String[] args) {
 
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("spring-rgf-config.xml");
+		
+		context.start();
+		
 		HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
 		objA.getMessage1();
 		objA.getMessage2();
@@ -25,8 +28,7 @@ public class InheritanceApp {
 		riskCoverA.setMessage("I am risk cover");
 		riskCoverA.getMessage();
 		
-		context.close();
+		context.stop();
 		
-
 	}
 }
